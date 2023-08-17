@@ -1,12 +1,19 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import DemoView from "../views/DemoView.vue";
+import PropRouteView from "../views/PropRouteView.vue";
 
 const routes = [
   {
     path: "/",
     name: "home",
     component: HomeView,
+  },
+  {
+    path: "/prop/:id",
+    name: "prop",
+    component: PropRouteView,
+    props: true,
   },
   {
     path: "/demo/:id",
