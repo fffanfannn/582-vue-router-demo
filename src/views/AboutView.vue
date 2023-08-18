@@ -2,13 +2,13 @@
   <div class="about">
     <h1>This is an about page</h1>
     <h2>Demo with programatic routing</h2>
-    <h3>With ID</h3>
+    <h3>Push With ID</h3>
     <div v-for="x in users" :key="x.id">
       <div :data-clickid="x.id" @click="handleCustomRouteId(x.id)">
         {{ x.name }}
       </div>
     </div>
-    <h3>With Event</h3>
+    <h3>Push With Event</h3>
     <div v-for="x in users" :key="x.id">
       <div :data-clickid="x.id" @click="handleCustomRouteEvent">
         {{ x.name }}
